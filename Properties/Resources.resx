@@ -1,0 +1,1149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetBrokers" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$brokers = get-brokercontroller -AdminAddress $var1
+foreach ($broker in $brokers)
+{
+	$broker.DnsName;
+}
+</value>
+  </data>
+  <data name="GetBrokersite" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$site = get-brokersite -AdminAddress $var1;
+$site.Name;
+</value>
+  </data>
+  <data name="GetBrokersiteFull" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+get-brokersite -AdminAddress $var1
+</value>
+  </data>
+  <data name="GetDBConn" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerdbconnection -AdminAddress $var1
+</value>
+  </data>
+  <data name="GetServices" xml:space="preserve">
+    <value>asnp citrix.config*
+$services = get-configregisteredserviceinstance -AdminAddress $var1
+foreach ($service in $services)
+{
+	Write-Output "$($service.ServiceType),$($service.address)";
+}
+</value>
+  </data>
+  <data name="resetbrokerserviceinstances" xml:space="preserve">
+    <value>$erroractionpreference = "Continue"
+asnp citrix.*
+foreach ($service in Get-ConfigRegisteredServiceInstance -AdminAddress $var1)
+{
+	$address = $service.Address
+	if ($address.Contains($var) -and $address -notmatch "Licensing")
+	{
+		try{$service|Unregister-ConfigRegisteredServiceInstance}
+		catch{}
+	}
+}
+foreach ($controller in Get-BrokerController){$vars += @($controller.DNSName)} #Get each DDC’s DNS name
+foreach ($var in $vars){ #Register each DDC’s service instances
+
+	try{Get-ConfigServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-ConfigServiceGroupMembership}catch{}
+	try{Get-HypServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-HypServiceGroupMembership}catch{}
+	try{Get-AcctServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-AcctServiceGroupMembership}catch{}
+	try{Get-PvsVmServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-PvsVmServiceGroupMembership}catch{}
+	try{Get-ProvServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-ProvServiceGroupMembership}catch{}
+
+	try{Get-BrokerServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigServiceInstance -adminaddress $var | Reset-BrokerServiceGroupMembership}catch{}
+}
+</value>
+  </data>
+  <data name="ResetInstances" xml:space="preserve">
+    <value>$ddcs = @() #Declare array 
+asnp citrix*
+$instances = Get-ConfigRegisteredServiceInstance -AdminAddress $var1
+foreach ($instance in $instances)
+{
+	if ($instance.Address -notmatch "Licensing")
+	{
+		$instance|Unregister-ConfigRegisteredServiceInstance
+	}
+}
+foreach ($controller in Get-BrokerController){$ddcs += @($controller.DNSName)} #Get each DDC’s DNS name
+foreach ($ddc in $ddcs){ #Register each DDC’s service instances
+
+	try{Get-ConfigServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-ConfigServiceGroupMembership}catch{}
+	try{Get-HypServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-HypServiceGroupMembership}catch{}
+	try{Get-AcctServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-AcctServiceGroupMembership}catch{}
+	try{Get-PvsVmServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-PvsVmServiceGroupMembership}catch{}
+	try{Get-ProvServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-ProvServiceGroupMembership}catch{}
+
+	try{Get-BrokerServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigServiceInstance -adminaddress $ddc | Reset-BrokerServiceGroupMembership}catch{}
+}
+</value>
+  </data>
+  <data name="TestInstance" xml:space="preserve">
+    <value>asnp citrix.config* 
+$result = get-configregisteredserviceinstance -address $var1 -AdminAddress $var2 | Test-ConfigServiceInstanceAvailability 
+$result.Status
+</value>
+  </data>
+  <data name="ClearPreferredHypervisor" xml:space="preserve">
+    <value>asnp citrix.broker*
+$hu = $var1; Set-BrokerHypervisorConnection -AdminAddress $var2 –Name $hu -PreferredController $null
+</value>
+  </data>
+  <data name="GetBrokerController" xml:space="preserve">
+    <value>asnp citrix.broker*
+$result = get-brokercontroller -dnsname $var1 -AdminAddress $var2
+$result.ActiveSiteServices
+</value>
+  </data>
+  <data name="GetBrokerControllersMachineNames" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$brokers = get-brokercontroller -AdminAddress $var1
+foreach ($broker in $brokers)
+{
+	$broker.MachineName;
+}
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnection" xml:space="preserve">
+    <value>asnp citrix.broker*
+Get-BrokerHypervisorConnection -Name $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnectionPreferredBroker" xml:space="preserve">
+    <value>asnp citrix.broker*
+$hu = Get-BrokerHypervisorConnection -name $var1 -AdminAddress $var2 
+$hu.PreferredController
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnections" xml:space="preserve">
+    <value>asnp citrix.broker*; Get-BrokerHypervisorConnection -AdminAddress $var1
+</value>
+  </data>
+  <data name="GetConfigRegisteredServiceInstance" xml:space="preserve">
+    <value>asnp citrix.config*
+get-configregisteredserviceinstance -address $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="SetBrokerHypervisorConnection" xml:space="preserve">
+    <value>asnp citrix.broker*
+$ddc = $var1 
+$service = $var2 
+Set-BrokerHypervisorConnection –Name "$service" -PreferredController $ddc -AdminAddress $var3
+</value>
+  </data>
+  <data name="GetBrokerDesktopGroup" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerdesktopgroup -name $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="GetBrokerDesktopGroupNames" xml:space="preserve">
+    <value>asnp citrix.broker*
+$groups = get-brokerdesktopgroup -AdminAddress $var1
+foreach ($group in $groups) 
+{$group.name}
+</value>
+  </data>
+  <data name="GetNetworks" xml:space="preserve">
+    <value>asnp citrix.host*
+$service = Get-HypService -AdminAddress $var1
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($network in $item.NetworkPath)
+	{	
+	$network
+	}
+}
+</value>
+  </data>
+  <data name="GetStorages" xml:space="preserve">
+    <value>asnp citrix.host*
+$service = Get-HypService -AdminAddress $var1
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($storage in $item.Storage)
+	{	
+	$storage.StoragePath
+	}
+}
+</value>
+  </data>
+  <data name="CheckServiceGroupNames" xml:space="preserve">
+    <value>asnp citrix.Broker*
+asnp citrix.Configuration*
+$instances = Get-ConfigRegisteredServiceInstance -AdminAddress $var1
+$site = Get-BrokerSite
+foreach ($instance in $instances)
+{
+	if($instance.ServiceGroupName -ne $site.Name)
+	{	
+		Write-Output "$($instance.ServiceGroupName),$($instance.ServiceInstanceUid),$($instance.Address)"
+	}
+}
+</value>
+  </data>
+  <data name="FixServiceGroupName" xml:space="preserve">
+    <value>asnp citrix.Broker*
+asnp citrix.Configuration*
+
+$instance = Get-ConfigRegisteredServiceInstance -ServiceInstanceUid $var1 -Adminaddress $var2
+$instance | Unregister-ConfigRegisteredServiceInstance
+$instance.ServiceGroupName = $site.Name
+$instance | Register-ConfigRegisteredServiceInstance
+</value>
+  </data>
+  <data name="GetBrokerDBVersion" xml:space="preserve">
+    <value>asnp citrix.broker*
+$version = Get-BrokerInstalledDbVersion -AdminAddress $var1
+write-output "$($version.Major).$($version.Minor).$($version.Build).$($version.Revision)"
+</value>
+  </data>
+  <data name="GetProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+get-provtask -taskid $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="RemoveProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+remove-provtask -AdminAddress $var2 -taskid $var1
+</value>
+  </data>
+  <data name="RemoveStorage" xml:space="preserve">
+    <value>asnp citrix.host*
+$service = Get-HypService -AdminAddress $var3
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	if ($item.PSChildName -eq $var1)
+	{
+		foreach ($storage in $item.Storage)
+		{
+			if ($storage -match $var2)
+			{
+				Remove-HypHostingUnitStorage -LiteralPath $item.PSPath -StoragePath $storage
+			}}}}
+</value>
+  </data>
+  <data name="StopProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+stop-provtask -taskid $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="GetAcctIdentityPool" xml:space="preserve">
+    <value>asnp citrix.adidentity*
+$pools = get-acctidentitypool -AdminAddress $var1
+foreach ($pool in $pools)
+{
+  $pool.IdentityPoolName
+}
+</value>
+  </data>
+  <data name="GetAcctIdentityPoolDetails" xml:space="preserve">
+    <value>asnp citrix.adidentity*
+get-acctidentitypool -IdentityPoolName $var1 -AdminAddress $var2
+</value>
+  </data>
+  <data name="GetBrokerCatalog" xml:space="preserve">
+    <value>asnp citrix.broker*
+$catalog = Get-BrokerCatalog -Name $var1 -AdminAddress $var2
+foreach ($property in $catalog.psobject.Properties)
+{
+	if ($property.Value)		
+	{
+		Write-Output "$($property.Name):$($property.Value)"
+	}
+}
+</value>
+  </data>
+  <data name="GetPvdStorages" xml:space="preserve">
+    <value>asnp citrix.host*
+$service = Get-HypService -AdminAddress $var1
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($storage in $item.PersonalvDiskStorage)
+	{	
+	$storage.StoragePath
+	}
+}
+</value>
+  </data>
+  <data name="RemovePvdStorage" xml:space="preserve">
+    <value>asnp citrix.host*
+$service = Get-HypService -AdminAddress $var3
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	if ($item.PSChildName -eq $var1)
+	{
+		foreach ($storage in $item.PersonalvdiskStorage)
+		{
+			if ($storage -match $var2)
+			{
+				Remove-HypHostingUnitStorage -LiteralPath $item.PSPath -StoragePath $storage -StorageType PersonalvDiskStorage
+			}}}}
+</value>
+  </data>
+  <data name="DisableMaintDG" xml:space="preserve">
+    <value>asnp citrix.broker*
+set-brokerdesktopgroup -adminaddress $var2 -name $var1 -InMaintenanceMode $false
+</value>
+  </data>
+  <data name="EnableMaintDG" xml:space="preserve">
+    <value>asnp citrix.broker*
+set-brokerdesktopgroup -name $var1 -InMaintenanceMode $true -AdminAddress $var2
+</value>
+  </data>
+  <data name="SetBrokerDesktopGroup" xml:space="preserve">
+    <value>asnp citrix.Broker*
+$site = get-brokersite -adminaddress $var15
+if ($var1 -eq "True"){$apofa = $true}
+else {$apofa = $false}
+if ($var13 -eq "True"){$sddau = $true}
+else {$sddau = $false}
+Set-BrokerDesktopGroup -AutomaticPowerOnForAssigned $apofa -ColorDepth $var2 -OffPeakBufferSizePercent $var3 -OffPeakDisconnectAction $var4 -OffPeakDisconnectTimeout $var5 -OffPeakLogOffAction $var6 -OffPeakLogoffTimeout $var7 -PeakBufferSizePercent $var8 -PeakDisconnectAction $var9 -PeakDisconnectTimeout $var10 -PeakLogOffAction $var11 -PeakLogoffTimeout $var12 -ShutdownDesktopsAfterUse $sddau -Name $var14</value>
+  </data>
+  <data name="EvictBroker" xml:space="preserve">
+    <value>asnp citrix*
+New-Item -ItemType file "$PWD\evictscript.txt" -Force
+	Add-Content "$PWD\evictscript.txt" "---- Script to remove a controller from a XenDesktop site: execute on the principal SQL Server database 
+---- instance. See http://support.citrix.com/article/CTX127359 for more information.
+---- This script should be run either using SQLCMD from the command line or using SQL Server Management Studio 
+---- in SQLCMD mode. See http://support.citrix.com/article/CTX134486 for steps on removing a broker that no longer exists in AD.
+----
+"
+	Add-Content "$PWD\evictscript.txt" (Get-ConfigDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+	Add-Content "$PWD\evictscript.txt" (Get-AcctDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+	Add-Content "$PWD\evictscript.txt" (Get-HypDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+	Add-Content "$PWD\evictscript.txt" (Get-ProvDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+	Add-Content "$PWD\evictscript.txt" (Get-PvsVmDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+	Add-Content "$PWD\evictscript.txt" (Get-BrokerDBSchema -DatabaseName $var3 -ScriptType Evict -SID $var2 -AdminAddress $var5)
+</value>
+  </data>
+  <data name="GetBrokerSid" xml:space="preserve">
+    <value>asnp citrix.broker*
+$broker = Get-BrokerController -DNSName $var1 -AdminAddress $var2
+Write-output "$($broker.SID)"</value>
+  </data>
+  <data name="GetProvScheme" xml:space="preserve">
+    <value>asnp citrix.machinec*
+$scheme = get-provscheme -ProvisioningSchemeName $var1 -AdminAddress $var2
+foreach ($property in $scheme.psobject.Properties)
+{
+	if ($property.Value)
+	{
+		Write-Output "$($property.Name):$($property.Value)"
+	}
+}
+</value>
+  </data>
+  <data name="RemoveProvTasks" xml:space="preserve">
+    <value>asnp citrix.machinec*
+foreach ($task in Get-ProvTask -AdminAddress $var2)
+{ 
+if ($task.WorkFlowStatus -eq $var1)
+	{ 
+	  	if ($var1 -eq "Completed" -or $var1 -eq "Terminated")	
+		{ 
+			remove-provtask -taskid $task.TaskId 
+	  	}   
+	  	if ($var1 -eq "Running")  
+	  	{ 
+			stop-provtask -taskid $task.TaskId 
+		} 
+	} 
+}</value>
+  </data>
+  <data name="GetObject" xml:space="preserve">
+    <value>asnp Citrix.Broker*;$site = Get-BrokerSite -AdminAddress $var3
+if ($var2 -match "ServiceInstance") {asnp citrix.config*;$object = get-configregisteredserviceinstance -address $var1}
+if ($var2 -match "AD Identity") {asnp citrix.adid*; $object = get-acctserviceinstance -adminaddress $var1}	
+if ($var2 -match "Delegated") {asnp citrix.del*;$object = get-adminservice -adminaddress $var1}	
+if ($var2 -match "Configuration") {asnp citrix.config*; $object = get-configserviceinstance -adminaddress $var1}	
+if ($var2 -match "Broker Service") {asnp citrix.broker*;$object = get-brokerserviceinstance -adminaddress $var1}	
+if ($var2 -match "Host Service") {asnp citrix.host*; $object = get-hypserviceinstance -adminaddress $var1}	
+if ($var2 -match "application") {asnp citrix.broker*; $object = get-brokerapplication -name $var1}	
+if ($var2 -match "Machine Creation") {asnp citrix.machinecreation*; $object = get-provserviceinstance -adminaddress $var1}	
+if ($var2 -match "Machine Identity") {asnp citrix.machineid*;$object = get-pvsvmserviceinstance -adminaddress $var1}	
+if ($var2 -match "Controllers") {asnp citrix.broker*; $object = get-brokercontroller -DNSName $var1}
+if ($var2 -match "Assignments") {asnp citrix.broker*; $object = get-brokerdesktop -MachineName $var1}	
+if ($var2 -match "Catalogs") {asnp citrix.broker*; $object = get-brokermachine -MachineName $var1}
+if ($var2 -match "ions") {asnp citrix.broker*; $object = get-brokersession -UID $var1}
+if ($var2 -match "Power") {asnp citrix.broker*; $object = Get-BrokerHostingPowerAction -UID $var1}
+if ($object.Count -lt 1) { foreach ($property in $object.psobject.Properties) { if ($property.Value) { Write-Output "$($property.Name):$($property.Value)" } } }
+if ($object.Count -gt 1) { foreach ($property in $object[0].psobject.Properties) { if ($property.Value) { Write-Output "$($property.Name):$($property.Value)" } } }</value>
+  </data>
+  <data name="GetRegisteredAssignmentDesktops" xml:space="preserve">
+    <value>asnp citrix.b*
+$desktops = Get-BrokerDesktop -AdminAddress $var2 -DesktopGroupName $var1 -RegistrationState Registered -MaxRecordCount 10000;
+if ($desktops)
+{
+foreach ($desktop in $desktops)
+{
+Write-Output "$($desktop.MachineName):$($desktop.DNSName):$($desktop.RegistrationState):$($desktop.PowerState):$($desktop.DesktopGroupName)"
+}
+}
+else { Write-Output "None"}</value>
+  </data>
+  <data name="GetUnregisteredPoweredOn" xml:space="preserve">
+    <value>asnp citrix.B*
+$unregisteredPoweredOn = Get-BrokerDesktop -SummaryState Unregistered -DesktopGroupName $var1 -AdminAddress $var2
+
+foreach ($desktop in $unregisteredPoweredOn)
+{
+  $desktop.DNSName
+}</value>
+  </data>
+  <data name="GetBrokerDesktopGroupRegistrations" xml:space="preserve">
+    <value>asnp citrix.b*
+$group = Get-BrokerDesktopGroup -Name $var1 -AdminAddress $var2
+Write-Output "Total Desktops:$($group.TotalDesktops):Unregistered:$($group.DesktopsUnregistered):Never:$($group.DesktopsNeverRegistered)"</value>
+  </data>
+  <data name="GetCatalogDesktop" xml:space="preserve">
+    <value>asnp citrix.b*
+foreach ($machine in get-brokermachine -CatalogName $var1 -AdminAddress $var2)
+{
+  Write-Output "$($machine.MachineName):$($machine.PowerState)"
+}</value>
+  </data>
+  <data name="GetUnregisteredAssignmentDesktop" xml:space="preserve">
+    <value>asnp citrix.b*
+$desktops = Get-BrokerDesktop -DesktopGroupName $var1 -RegistrationState Unregistered -MaxRecordCount 10000 -AdminAddress $var2;
+if ($desktops)
+{
+foreach ($desktop in $desktops)
+{
+Write-Output "$($desktop.MachineName):$($desktop.DNSName):$($desktop.RegistrationState):$($desktop.PowerState):$($desktop.DesktopGroupName)"
+}
+}
+else { Write-Output "None"}</value>
+  </data>
+  <data name="DisableMaintCatalog" xml:space="preserve">
+    <value>asnp citrix.broker*
+$desktop = get-brokerdesktop -AdminAddress $var2 -machinename $var1
+if ($desktop.DesktopKind -match "Private")
+{
+  set-brokerprivatedesktop -machinename $desktop.MachineName -InMaintenanceMode $false
+}
+if ($desktop.DesktopKind -match "Share")
+{
+set-brokershareddesktop -Machinename $var -InMaintenanceMode $false
+}</value>
+  </data>
+  <data name="EnableMaintCatalog" xml:space="preserve">
+    <value>asnp citrix.broker*
+$desktop = get-brokerdesktop -machinename $var1 -Adminaddress $var2
+if ($desktop.DesktopKind -match "Private")
+{
+  set-brokerprivatedesktop -machinename $desktop.MachineName -InMaintenanceMode $true
+}
+if ($desktop.DesktopKind -match "Share")
+{
+set-brokershareddesktop -Machinename $var -InMaintenanceMode $true
+}
+</value>
+  </data>
+  <data name="GetActiveSessions" xml:space="preserve">
+    <value>asnp citrix.b*
+foreach ($session in Get-BrokerDesktop -AdminAddress $var1  -SummaryState InUse -MaxRecordCount 10000) 
+{ 
+	if ($session.SessionUserName)
+	{
+		Write-Output "SessionID:$($session.SessionUID) - $($session.SessionUserName) is $($session.SessionState) on $($session.MachineName) since $($session.SessionStateChangeTime)"
+	}
+}	
+foreach ($instance in Get-BrokerApplicationInstance -AdminAddress $var1 -MaxRecordCount 10000)
+{ 
+	$session = Get-BrokerSession -Uid $instance.SessionUid
+	if ($session.SessionState -eq "Active")
+	{
+    	Write-Output "SessionID:$($instance.SessionUID) - $($instance.UserName) is $($session.SessionState) with $($instance.ApplicationName) on $($instance.MachineName) since $($session.SessionStateChangeTime)"
+	}
+}</value>
+  </data>
+  <data name="GetCompletePowerActions" xml:space="preserve">
+    <value>asnp citrix.B*
+foreach ($action in get-brokerhostingpoweraction -AdminAddress $var1 -MaxRecordCount 100 -SortBy -'ActionCompletionTime')
+{
+	if ($action.State -ne "Pending" -and $action.State -ne "Started")
+	{
+		$desktop = Get-BrokerDesktop -MachineName $action.MachineName
+		switch ($action.ActualPriority)
+		{
+			10 { $actionsource = "'User-driven restart' " }
+			20 { $actionsource = "Session Launch " }
+			30 { $actionsource = "Admin " }
+			33 { $actionsource = "PVD " }
+			40 { $actionsource = "'Un-taint' worker " }
+			50 { $actionsource = "Power Policy " }
+			60 { $actionsource = "Idle Pool " }
+		}
+ 		write-output "UID:$($action.UID): $($actionsource)initiated $($action.Action) $($action.State) for $($action.MachineName) in '$($desktop.DesktopGroupName)' at $($action.ActionCompletionTime)"
+	}
+}</value>
+  </data>
+  <data name="GetHostsByName" xml:space="preserve">
+    <value>asnp citrix.broker*
+foreach ($hostconn in Get-BrokerHypervisorConnection -AdminAddress $var1)
+{ $hostconn.Name }
+
+</value>
+  </data>
+  <data name="GetInactiveSessions" xml:space="preserve">
+    <value>asnp citrix.broker*
+foreach ($session in Get-BrokerSession -SessionState Disconnected -AdminAddress $var1) 
+{ 	  
+	if ($session.SessionUserName)
+	{
+		Write-Output "SessionID:$($session.SessionUID) - $($session.SessionUserName) $($session.SessionState) from $($session.MachineName) at $($session.SessionStateChangeTime)"
+	}
+}
+foreach ($instance in Get-BrokerApplicationInstance -AdminAddress $var1 -MaxRecordCount 10000)
+{ 
+	$session = Get-BrokerSession -Uid $instance.SessionUid
+	if ($session.SessionState -ne "Active")
+	{
+    	Write-Output "SessionID:$($instance.SessionUID) - $($instance.UserName) has been $($session.SessionState) from $($instance.ApplicationName) on $($instance.MachineName) since $($session.SessionStateChangeTime)"
+	}
+}</value>
+  </data>
+  <data name="GetMachineInfo" xml:space="preserve">
+    <value>asnp citrix.machine*
+asnp citrix.Broker*
+asnp citrix.adidentity*
+foreach ($task in Get-ProvTask -AdminAddress $var1)
+{ 
+	write-output "ProvTask:$($task.TaskID)#$($task.WorkflowStatus)" 
+}
+foreach ($scheme in Get-ProvScheme -AdminAddress $var1)
+{ 
+	write-output "ProvScheme:$($scheme.ProvisioningSchemeName)" 
+}
+foreach ($catalog in get-brokercatalog -AdminAddress $var1)
+{
+	Write-Output "Catalogs:$($catalog.Name)#$($catalog.CatalogKind)"
+}
+foreach ($pool in get-acctidentitypool -AdminAddress $var1)
+{
+ Write-Output "ADIDPool:$($pool.IdentityPoolName)"
+}</value>
+  </data>
+  <data name="GetPendingPowerActions" xml:space="preserve">
+    <value>asnp citrix.B*
+foreach ($action in get-brokerhostingpoweraction -AdminAddress $var1 -MaxRecordCount 1000 -SortBy -'ActionCompletionTime' )
+{
+	if ($action.State -eq "Pending" -or $action.State -eq "Started")
+	{
+		if ($action.ActualPriority -eq 10)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): User-driven restart initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 20)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): Session Launch initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 30)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): Admin initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 33)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): PVD initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 40)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): Un-taint worker initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 50)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): Power Policy initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+		if ($action.ActualPriority -eq 60)
+		{
+			write-output "UID:$($action.UID):Status:$($action.State): Idle Pool initiated a $($action.Action) action for $($action.MachineName) at $($action.ActionStartTime)"
+		}
+	}
+}</value>
+  </data>
+  <data name="PowerAction" xml:space="preserve">
+    <value>asnp citrix.b*
+New-BrokerHostingPowerAction -MachineName $var1 -Action $var2 -AdminAddress $var3
+</value>
+  </data>
+  <data name="ServiceName" xml:space="preserve">
+    <value>CDFMonitor</value>
+  </data>
+  <data name="DisconnectDesktopSession" xml:space="preserve">
+    <value>asnp citrix.b*
+$desktop = get-brokerdesktop -machinename $var1 -Adminaddress $var2
+get-brokersession -uid $desktop.SessionUID | disconnect-brokersession</value>
+  </data>
+  <data name="DisconnectDesktopSessions" xml:space="preserve">
+    <value>asnp citrix.b*
+foreach ($desktop in get-brokerdesktop -AdminAddress $var1 -SummaryState InUse)
+{ get-brokersession -uid $desktop.SessionUID | disconnect-brokersession }
+</value>
+  </data>
+  <data name="DisconnectSession" xml:space="preserve">
+    <value>asnp citrix.b*
+get-brokersession -uid $var1 -adminaddress $var2 | disconnect-brokersession</value>
+  </data>
+  <data name="LogoffDesktopSession" xml:space="preserve">
+    <value>asnp citrix.b*
+$desktop = get-brokerdesktop -machinename $var1 -AdminAddress $var2
+get-brokersession -uid $desktop.SessionUID | stop-brokersession</value>
+  </data>
+  <data name="LogoffDesktopSessions" xml:space="preserve">
+    <value>asnp citrix.b*
+$site = Get-BrokerSite -AdminAddress $var2
+if ($var1 -eq "active")
+{ 
+foreach ($desktop in get-brokerdesktop -SummaryState InUse)
+{ get-brokersession -uid $desktop.SessionUID | stop-brokersession }
+}
+if ($var1 -eq "inactive")
+{
+foreach ($desktop in get-brokerdesktop -SummaryState Disconnected)
+{ get-brokersession -uid $desktop.SessionUID | stop-brokersession }
+}
+</value>
+  </data>
+  <data name="LogoffSession" xml:space="preserve">
+    <value>asnp citrix.b*
+get-brokersession -uid $var1 -AdminAddress $var2 | stop-brokersession</value>
+  </data>
+  <data name="CheckWorker" xml:space="preserve">
+    <value>$computer = $var1
+
+$result = Test-Connection -Quiet -Computer $computer -TimeToLive 5
+if ($result -eq $true)
+{
+	try
+	{
+		$os = Get-WmiObject Win32_OperatingSystem -computername $computer -ea stop
+	}
+	catch {}
+	if ($os) 
+	{
+	    $lastboot=$os.ConvertToDateTime($os.lastbootuptime)
+	    $uptime=(get-date) - ($os.ConvertToDateTime($os.lastbootuptime))
+		if ($uptime.Days -gt 0)
+		{
+			$timeup += "$($uptime.Days.ToString().Split('.')[0]) days "
+		}
+		if ($uptime.Hours -gt 0)
+		{
+			$timeup += "$($uptime.Hours.ToString().Split('.')[0]) hours "
+		}
+		if ($uptime.Minutes -gt 0)
+		{
+			$timeup += "$($uptime.Minutes.ToString().Split('.')[0]) minutes"
+		}
+	    $osname=$os.Caption
+	    try { $workerstatus = gwmi win32_service -filter "name='workstationagent'" -computername $computer -ErrorAction Stop; $status=$workerstatus.State }
+		catch [Exception] { $status = $_.Exception.Message.ToString()}  
+		if (!$status)
+		{ $status = "N/A" }
+ 	}
+}
+else { $lastboot = "N/A"; $uptime = "N/A"; $osname = "N/A"; $status = "N/A" } #n/a's here
+Write-Output "DNSName,DesktopGroupName,$($osname),RegStatus,PowerState,powerAction,powerReason,powerTime,deregReason,lastDeregTime,$($lastboot),$($timeup),$($status)"</value>
+  </data>
+  <data name="CheckWorkers" xml:space="preserve">
+    <value>asnp citrix.b*
+function Get-PowerAction {
+	Param([string]$computername=$(Throw "You must specify a computer name."))	
+	foreach ($action in get-brokerhostingpoweraction -AdminAddress $var6 -DNSName $computername -MaxRecordCount 1 -SortBy -'ActionCompletionTime')	
+	{
+	 $desktop = Get-BrokerDesktop -MachineName $action.MachineName
+	 switch ($action.ActualPriority)
+	 {
+	 10 { $actionsource = "'User-driven restart ($($action.State))'" }
+	 20 { $actionsource = "Session Launch ($($action.State))" }
+	 30 { $actionsource = "Admin ($($action.State))" }
+	 33 { $actionsource = "PVD ($($action.State))" }
+	 40 { $actionsource = "'Un-taint' worker ($($action.State))" }
+	 50 { $actionsource = "Power Policy ($($action.State))" }
+	 60 { $actionsource = "Idle Pool ($($action.State))" }
+	 }
+	 $poweraction = "$($actionsource),$($action.Action),$($action.ActionCompletionTime)"
+	 write $poweraction
+	}
+}
+$computers = @()
+$command = 'Get-BrokerDesktop -SortBy -''LastDeregistrationTime'' -MaxRecordCount '
+$command += $var1
+if ($var3 -eq "PoweredOn")
+{
+	$command += ' -PowerState ''On'''
+}
+if ($var4 -eq "UnregOnly")
+{	
+	$command += ' -SummaryState Unregistered'
+}
+if ($var5.Length -gt 0)
+{
+	$groups = $var5.Split(',')
+	foreach ($group in $groups)
+	{
+		$command2 = $command + " " + "-DesktopGroupName '$($group)'"
+		$script = $ExecutionContext.InvokeCommand.NewScriptBlock($command2)
+		$computers += &amp; $script
+	}
+}
+else { $finalscript = $ExecutionContext.InvokeCommand.NewScriptBlock($command); $computers = &amp; $finalscript }
+foreach ($computer in $computers)
+{
+	if ($computer.DNSName.Length -gt 0)
+	{			
+		if ($computer.LastDeregistrationTime)
+		{
+			$lastDeregTime = $computer.LastDeregistrationTime
+			#$diff = (Get-Date) - ($computer.LastDeregistrationTime)
+			#if ($diff.TotalMinutes -lt 60000)		
+		}
+		else { $lastDeregTime = "Null" }
+		if ($computer.LastDeregistrationReason)
+	    	{ $deregReason = $computer.LastDeregistrationReason }
+	    else { $deregReason = "N/A" }	
+		if ($computer.SummaryState)
+			{ $regstatus = $computer.SummaryState }	
+		else { $regstatus = "N/A" }
+		$action = Get-PowerAction $computer.DNSName				
+		if ($action)
+		{
+			$actions = $action.Split(',')
+			$powerReason = $actions[0]
+			$powerAction = $actions[1]
+			$powerTime = $actions[2]
+		}
+		else 
+		{ $powerReason = "N/A";$powerAction = "N/A";$powerTime = "N/A" }
+	    if ($computer.LastDeregistrationTime)
+		{	 
+			$lastDeregTime = $computer.LastDeregistrationTime	
+			$diff = (Get-Date) - ($computer.LastDeregistrationTime)
+		}						    
+		else { $lastDeregTime = "N/A"; $diff = (Get-Date) - (Get-Date) }		
+		
+		if ($diff.TotalMinutes -lt $var2)		
+			{ Write-Output "$($computer.DNSName),$($computer.DesktopGroupName),Pending,$($regstatus),$($computer.PowerState),$($powerAction),$($powerReason),$($computer.LastConnectionUser),$($computer.LastConnectionTime),$($powerTime),$($deregReason),$($lastDeregTime),Pending,Pending,Pending,Pending,Pending,Pending"  }
+	}
+}</value>
+  </data>
+  <data name="GetRegValue" xml:space="preserve">
+    <value>$strComputer = $var1
+$strKeyPath = $var2
+$strValueName2 = $var3 
+$reg = Get-WmiObject -List -Namespace root\default -ComputerName $strComputer | Where-Object {$_.Name -eq "StdRegProv"}
+if ($strValueName2 -eq "Counter")
+{
+	$strValue2 = $reg.GetMultiStringValue(2147483650,$strKeyPath,$strValueName2)
+}
+else { $strValue2 = $reg.GetStringValue(2147483650,$strKeyPath,$strValueName2) }
+if ($strValue2.sValue -eq $null)
+{
+	Write-Output "Not Found"
+}
+else { if ($strValueName2 -eq "Counter") {$strValue2.sValue[0]} else {$strValue2.sValue} }</value>
+  </data>
+  <data name="GetBrokerDesktop" xml:space="preserve">
+    <value>asnp citrix.broker*
+@($desktops)
+@($registeredvms)
+$desktops = get-brokerdesktop -maxrecordcount 20000 -AdminAddress $var1
+$desktopcount = @($desktops).count
+write-output "Total Machines:" $desktopcount "#"
+$groups = get-brokerdesktopgroup
+write-output "Total Catalogs:" @($groups).count "#"
+$dirtyvms = Get-BrokerDesktop -PowerActionPending $false -PowerState On -SummaryState Available -WillShutdownAfterUse $true
+write-output "Tainted Machines:" $dirtryvms.count "#"
+$registeredvms = Get-BrokerDesktop -RegistrationState Registered -maxrecordcount 20000
+if (@($registeredvms).count -eq $null)
+{
+$registeredcount = 0;
+}
+else {$registeredcount = @($registeredvms).count}
+if ($desktopcount -ne $null)
+{
+$percentregistered = ($registeredcount / $desktopcount) *100
+$percentregistered  = "{0:N0}" -f $percentregistered
+}
+else {$percentregistered = 0}
+write-output "Registered Machines:" $registeredcount " (" $percentregistered "%)"
+</value>
+  </data>
+  <data name="CheckObjectSIDError" xml:space="preserve">
+    <value>asnp citrix.b*
+$desktop = get-brokerdesktop -DNSName $var1 -AdminAddress $var2
+$event = get-eventlog -computername $desktop.DNSName -logname application -source "Citrix Desktop Service" -newest 1 -EntryType Warning -message *objectsid* -after $desktop.LastDeregistrationTime
+if ($event)
+{
+     Write-output "$($event.Timewritten)"
+}
+else {write-output "Not Found"}</value>
+  </data>
+  <data name="EnumSite" xml:space="preserve">
+    <value>add-pssnapin citrix*
+$ErrorActionPreference="SilentlyContinue"
+$ErrorActionPreference = "Continue"
+date | Write-Output
+Write-Output "-------------------------------"
+Write-Output "Site Details:"
+Get-brokersite | Write-Output
+Write-Output "-------------------------------"
+Write-Output "Controller Details:"
+Get-brokercontroller | Write-Output
+Write-Output "-------------------------------"
+Write-Output "Active Site Services:"
+foreach($broker in Get-BrokerController -AdminAddress $var1)
+{
+	$broker.MachineName
+	foreach($service in $broker.ActiveSiteServices)
+	{
+		write-output "`t$($service)"
+	}
+}
+Write-Output "-------------------------------"
+Write-Output "DB Connection Strings:"
+foreach($broker in Get-BrokerController)
+{	
+	Write-Output "---"
+	Write-Output "$($broker.DNSName) Configuration Service: $(Get-ConfigDBConnection -AdminAddress $broker.DNSName)"
+	Write-Output "$($broker.DNSName) AD Identity Service: $(Get-AcctDBConnection -AdminAddress $broker.DNSName)"
+	Write-Output "$($broker.DNSName) Host Service: $(Get-HypDBConnection -AdminAddress $broker.DNSName)"
+	Write-Output "$($broker.DNSName) Machine Identity Service: $(Get-ProvDBConnection -AdminAddress $broker.DNSName)"
+	Write-Output "$($broker.DNSName) Machine Creation Service: $(Get-PVSVMDBConnection -AdminAddress $broker.DNSName)"
+	Write-Output "$($broker.DNSName) Broker Service: $(Get-BrokerDBConnection -AdminAddress $broker.DNSName)"	
+}
+Write-Output "Database Version:"
+Get-BrokerInstalledDBVersion | write-output
+Write-Output "-------------------------------"
+Write-Output "Broker Service Instance:"
+Get-BrokerServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Broker Service Status:"
+Get-BrokerServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Registered Service Instances:"
+Get-ConfigRegisteredServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Test Service Instances:"
+Get-ConfigRegisteredServiceInstance | Test-ConfigServiceInstanceAvailability -ForceWaitForOneOfEachType | Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Service database schema:"
+Get-HypInstalledDBVersion| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Service Instance (Get-HypServiceInstance):"
+Get-HypServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Service (Get-HypService):"
+Get-HypService| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Service Status:"
+Get-HypServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Connections:"
+Get-BrokerHyperVisorConnection| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Tasks:"
+Get-HypTask| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Host Power Actions:"
+Get-brokerhostingpoweraction| Write-Output
+Write-Output "-------------------------------"
+Write-Output "AD Identity Service database schema:"
+Get-AcctInstalledDBVersion| Write-Output
+Write-Output "-------------------------------"
+Write-Output "AD Identity Service Instance:"
+Get-AcctServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "AD Identity Service:"
+Get-AcctService| Write-Output
+Write-Output "-------------------------------"
+Write-Output "AD Identity Service Status:"
+Get-AcctServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "AD Identity Tasks:"
+Get-AcctTask| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Identity Service database schema:"
+Get-PvsVmInstalledDBVersion| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Identity Service Instance:"
+Get-PvsVmServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Identity Service:"
+Get-PvsVmService| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Identity Service Status:"
+Get-PvsVmServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Identity tasks:"
+Get-PvsVmTask| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation Service database schema:"
+Get-ProvInstalledDBVersion| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation Provisioning Schemes:"
+Get-ProvScheme| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation Service Instance:"
+Get-ProvServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation Service:"
+Get-ProvService| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation Service status:"
+Get-ProvServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Machine Creation tasks:"
+Get-ProvTask| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Configuration Service database schema:"
+Get-ConfigInstalledDBVersion| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Configuration Service Instance:"
+Get-ConfigServiceInstance| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Configuration Service:"
+Get-ConfigService| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Configuration Service status:"
+Get-ConfigServiceStatus| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Configuration Service tasks:"
+Get-ConfigTask| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Full Armor Policy blob:"
+Export-BrokerDesktopPolicy| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Site Access Policy Rules:"
+Get-BrokerAccessPolicyRule| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Power Management Time Schemes:"
+Get-BrokerPowerTimeScheme| Write-Output
+Write-Output "-------------------------------"
+Write-Output "Catalogs:"
+foreach($catalog in Get-BrokerCatalog)
+{    
+    $catalog| Write-Output
+}
+Write-Output "-------------------------------"
+Write-Output "Desktop Groups:"
+foreach($group in Get-BrokerDesktopGroup)
+{    
+    $group| Write-Output
+}
+Write-Output "-------------------------------"
+Write-Output "Desktops:"
+foreach($desktop in Get-BrokerDesktop)
+{ 
+    $desktop| Write-Output
+}</value>
+  </data>
+  <data name="CheckNeededSnapins" xml:space="preserve">
+    <value>$Snapins = "Citrix.ADIdentity.Admin","Citrix.Broker.Admin","Citrix.Configuration.Admin","Citrix.Host.Admin","Citrix.MachineCreation.Admin"
+$MissingSnapins=@()
+$FoundMissingSnapin=$false
+$LoadedSnapins = @()
+$RegisteredSnapins = @()
+$LoadedSnapins += get-pssnapin -Registered -Name Citrix* | % {$_.name}
+
+foreach ($Snapin in $Snapins)
+{
+	#check if the snapin is registered
+	if (!($LoadedSnapins -match $snapin))
+	{
+		$MissingSnapins += $Snapin
+	}
+}
+if ($MissingSnapins)
+{
+	foreach ($snapin in $missingSnapins)
+	{
+		Write-Output $snapin
+	}
+}#End If
+Else
+{
+	"Yes"
+}</value>
+  </data>
+  <data name="TestSiteConn" xml:space="preserve">
+    <value>asnp citrix.bro*; Try { $site = Get-BrokerSite -adminaddress $var1 ; "Local" } catch [Exception] {
+   return $_.Exception.Message
+}</value>
+  </data>
+  <data name="ControllerVersion" xml:space="preserve">
+    <value>asnp citrix.broker*
+$c = get-brokercontroller -adminaddress $var1 
+if ($c.Count -eq 1) {$c.ControllerVersion}
+if ($c.Count -gt 1) {$c[0].ControllerVersion}
+else {$c.ControllerVersion}</value>
+  </data>
+  <data name="GetBrokerApplication" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerapplication -name $var1 -AdminAddress $var2</value>
+  </data>
+  <data name="GetBrokerAppNames" xml:space="preserve">
+    <value>asnp citrix.broker*
+$apps = get-brokerapplication -AdminAddress $var1
+foreach ($app in $apps) 
+{$app.name}</value>
+  </data>
+  <data name="GetAppIcon" xml:space="preserve">
+    <value>asnp citrix.b*
+$app = Get-BrokerApplication -AdminAddress $var1 -Name $var2
+$icon = Get-BrokerIcon -Uid ($app.Uid + 1)
+$icon.EncodedIconData</value>
+  </data>
+  <data name="GetAppInstances" xml:space="preserve">
+    <value>asnp citrix.b*
+foreach ($instance in Get-BrokerApplicationInstance -AdminAddress $var1 -MaxRecordCount 10000)
+{ 
+	$session = Get-BrokerSession -Uid $instance.SessionUid
+    Write-Output "$($instance.ApplicationName),SessionID:$($instance.SessionUID) - $($instance.UserName) has been $($session.SessionState) to $($instance.MachineName) since $($session.SessionStateChangeTime)"
+}</value>
+  </data>
+  <data name="TestAuth" xml:space="preserve">
+    <value>asnp citrix.broker*
+$result = get-brokersite -address $var1
+$result</value>
+  </data>
+</root>

@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetBroker" xml:space="preserve">
+    <value>asnp citrix.broker*;
+$broker = get-brokercontroller -DnsName $var
+write-output "Name:" $broker.DnsName "#"
+write-output "Active Site Services:" $broker.ActiveSiteServices "#"
+write-output "Version:" $broker.ControllerVersion "#"
+write-output "Registered Machines:" $broker.DesktopsRegistered "#"
+write-output "SID:" $broker.SID "#"
+write-output "State:" $broker.State
+</value>
+  </data>
+  <data name="GetBrokers" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$brokers = get-brokercontroller
+foreach ($broker in $brokers)
+{
+	$broker.DnsName;
+}
+</value>
+  </data>
+  <data name="GetBrokersite" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$site = get-brokersite;
+$site.Name;
+</value>
+  </data>
+  <data name="GetBrokersiteFull" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+get-brokersite
+</value>
+  </data>
+  <data name="GetDBConn" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerdbconnection
+</value>
+  </data>
+  <data name="GetServices" xml:space="preserve">
+    <value>asnp citrix.config*
+$services = get-configregisteredserviceinstance
+foreach ($service in $services)
+{
+	$service.address;
+}
+</value>
+  </data>
+  <data name="resetbrokerserviceinstances" xml:space="preserve">
+    <value>$erroractionpreference = "Continue"
+asnp citrix.config*
+asnp citrix.Broker*
+asnp citrix.Host.admin*
+asnp citrix.machinecreation*
+asnp citrix.machineidentity*
+asnp citrix.ADIdentity*
+$services = Get-ConfigRegisteredServiceInstance 
+foreach ($service in $services)
+{
+	$address = $service.Address
+	if ($address.Contains($var) -and $address -notmatch "Licensing")
+	{
+		try{$service|Unregister-ConfigRegisteredServiceInstance}
+		catch{}
+	}
+}
+foreach ($controller in Get-BrokerController){$vars += @($controller.DNSName)} #Get each DDC’s DNS name
+foreach ($var in $vars){ #Register each DDC’s service instances
+
+	try{Get-ConfigServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-ConfigServiceGroupMembership}catch{}
+	try{Get-HypServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-HypServiceGroupMembership}catch{}
+	try{Get-AcctServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-AcctServiceGroupMembership}catch{}
+	try{Get-PvsVmServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-PvsVmServiceGroupMembership}catch{}
+	try{Get-ProvServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $var | Reset-ProvServiceGroupMembership}catch{}
+
+	try{Get-BrokerServiceInstance -adminaddress $var | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigServiceInstance -adminaddress $var | Reset-BrokerServiceGroupMembership}catch{}
+}
+</value>
+  </data>
+  <data name="ResetInstances" xml:space="preserve">
+    <value>$ddcs = @() #Declare array 
+asnp citrix*
+$instances = Get-ConfigRegisteredServiceInstance 
+foreach ($instance in $instances)
+{
+	if ($instance.Address -notmatch "Licensing")
+	{
+		$instance|Unregister-ConfigRegisteredServiceInstance
+	}
+}
+foreach ($controller in Get-BrokerController){$ddcs += @($controller.DNSName)} #Get each DDC’s DNS name
+foreach ($ddc in $ddcs){ #Register each DDC’s service instances
+
+	try{Get-ConfigServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-ConfigServiceGroupMembership}catch{}
+	try{Get-HypServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-HypServiceGroupMembership}catch{}
+	try{Get-AcctServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-AcctServiceGroupMembership}catch{}
+	try{Get-PvsVmServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-PvsVmServiceGroupMembership}catch{}
+	try{Get-ProvServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigRegisteredServiceInstance -adminaddress $ddc | Reset-ProvServiceGroupMembership}catch{}
+
+	try{Get-BrokerServiceInstance -adminaddress $ddc | Register-ConfigServiceInstance}catch{}
+	try{Get-ConfigServiceInstance -adminaddress $ddc | Reset-BrokerServiceGroupMembership}catch{}
+}
+</value>
+  </data>
+  <data name="TestInstance" xml:space="preserve">
+    <value>asnp citrix.config* 
+$result = get-configregisteredserviceinstance -address $var | Test-ConfigServiceInstanceAvailability 
+$result.Status
+</value>
+  </data>
+  <data name="AccountNameCacheRefresh" xml:space="preserve">
+    <value>This service periodically polls the database to check for cached user/group SAM/CN/UPN names that have not been refreshed for more than a configured period of time. Where such names are found the local User/Group Account Name Cache service is used to refresh them.</value>
+  </data>
+  <data name="AddressNameResolver" xml:space="preserve">
+    <value>This service resolves the names of the WI instances used for a session launch, and the first hop in the connection to the client machine (typically the client machine itself). Lookups are done via direct DNS lookups of the IP addresses reported during the session launch processing of the Broker Service.</value>
+  </data>
+  <data name="ADIdentityService" xml:space="preserve">
+    <value>The AD Identity service records Active directory computer accounts that can be used to provide the identity for Provisioned Machines.  These AD computer accounts can be created by the AD Identity Service or existing AD computer accounts can be imported.  The AD Computer accounts are collected together into Identity Pools, to provide collections of AD computer accounts that can be associated with Provisioning Schemes (defined in the Machine Creation Service).</value>
+  </data>
+  <data name="BrokerInfo" xml:space="preserve">
+    <value>The Infrastructure Services provide central facilities that are used by the XenDesktop components in the deployments.  They consist of 2 main elements, a Configuration Service and a Host Service; these services do not provide any functionality in their own right but are used as building blocks for the other services that are provided by the release. The main functionality these services provide is;
+•	Service Directory facilities
+•	Hypervisor (browsing and configuration definitions)
+The services must be run on a domain joined machine, they can be installed on a non-domain joined machine, but they will not be able to start until the machine is joined to a domain.</value>
+  </data>
+  <data name="BrokerReaper" xml:space="preserve">
+    <value>This service periodically polls the database to check for long-running brokering operations that were either started but have not completed in a reasonable time, or have a required state change after a predetermined period.</value>
+  </data>
+  <data name="BrokerService" xml:space="preserve">
+    <value>The broker service controls most of the day-to-day activity of a controller server in a XenDesktop site. It controls and chooses the resources (applications and desktops) to be served to users, and controls the power state of managed machines according to policy rules and user demands. It is also the conduit through which most run-time status of XenDesktop components is exposed to administration consoles, and any run-time state changes enforced. The broker service is also used to enforce licensing.</value>
+  </data>
+  <data name="ClearPreferredHypervisor" xml:space="preserve">
+    <value>asnp citrix.broker*
+$hu = $var; Set-BrokerHypervisorConnection –Name $hu -PreferredController $null
+</value>
+  </data>
+  <data name="ConfigurationService" xml:space="preserve">
+    <value>The Configuration service provides the ability to register services that form part of a XenDesktop deployment and can be used by other services as a directory to locate services that they require to use.  This service also provides the ability to store metadata for the deployment.</value>
+  </data>
+  <data name="ControllerNameCacheRefresh" xml:space="preserve">
+    <value>This service periodically polls the database to check for cached DDC SAM/DNS names that have not been refreshed for more than a configured period of time. Where such names are found the local Controller Name Cache service is used to refresh the names.</value>
+  </data>
+  <data name="ControllerReaper" xml:space="preserve">
+    <value>This service periodically polls the database to check for Broker Services that are marked as active but where the recorded last activity time implies that the Broker Service has failed. Where failed Broker Services are detected any site service leases owned by the failed process are released; although not essential this expedites the moving of site services to other DDCs.</value>
+  </data>
+  <data name="GetAcctService" xml:space="preserve">
+    <value>asnp citrix.adid*
+get-acctserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GetBrokerController" xml:space="preserve">
+    <value>asnp citrix.broker*
+$result = get-brokercontroller -dnsname $var 
+$result.ActiveSiteServices
+</value>
+  </data>
+  <data name="GetBrokerControllersMachineNames" xml:space="preserve">
+    <value>asnp citrix.broker.admin*
+$brokers = get-brokercontroller
+foreach ($broker in $brokers)
+{
+	$broker.MachineName;
+}
+</value>
+  </data>
+  <data name="GetBrokerDesktop" xml:space="preserve">
+    <value>asnp citrix.broker*
+@($desktops)
+@($registeredvms)
+$desktops = get-brokerdesktop -maxrecordcount 20000
+$desktopcount = @($desktops).count
+write-output "Total Machines:" $desktopcount "#"
+$groups = get-brokerdesktopgroup
+write-output "Total Catalogs:" @($groups).count "#"
+$dirtyvms = Get-BrokerDesktop -PowerActionPending $false -PowerState On -SummaryState Available -WillShutdownAfterUse $true
+write-output "Tainted Machines:" $dirtryvms.count "#"
+$registeredvms = Get-BrokerDesktop -RegistrationState Registered -maxrecordcount 20000
+if (@($registeredvms).count -eq $null)
+{
+$registeredcount = 0;
+}
+else {$registeredcount = @($registeredvms).count}
+if ($desktopcount -ne $null)
+{
+$percentregistered = $registeredcount / $desktopcount
+$percentregistered = $percentregistered * 100
+$percentregistered  = "{0:N0}" -f $percentregistered
+}
+else {$percentregistered = 0}
+write-output "Registered Machines:" $registeredcount " (" $percentregistered "%)"
+
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnection" xml:space="preserve">
+    <value>asnp citrix.broker*
+Get-BrokerHypervisorConnection -Name $var
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnectionPreferredBroker" xml:space="preserve">
+    <value>asnp citrix.broker*
+$hu = Get-BrokerHypervisorConnection -name $var 
+$hu.PreferredController
+</value>
+  </data>
+  <data name="GetBrokerHypervisorConnections" xml:space="preserve">
+    <value>asnp citrix.broker*; Get-BrokerHypervisorConnection
+</value>
+  </data>
+  <data name="GetBrokerServiceInstance" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GetConfigRegisteredServiceInstance" xml:space="preserve">
+    <value>asnp citrix.config*
+get-configregisteredserviceinstance -address $var
+</value>
+  </data>
+  <data name="GetConfigService" xml:space="preserve">
+    <value>asnp citrix.config*
+get-configserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GetHypService" xml:space="preserve">
+    <value>asnp citrix.host*
+get-hypserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GetProvService" xml:space="preserve">
+    <value>asnp citrix.machinecreation*
+get-provserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GetPVSVMService" xml:space="preserve">
+    <value>asnp citrix.machineid*
+get-pvsvmserviceinstance -adminaddress $var
+</value>
+  </data>
+  <data name="GroupUsage" xml:space="preserve">
+    <value>This service records the current desktop group usage statistics within the site on the hour every hour. The information recorded can be viewed using the Broker SDK’s Get-BrokerDesktopUsage cmdlet.</value>
+  </data>
+  <data name="HostService" xml:space="preserve">
+    <value>The Host service provides the ability to create and manage connections to hypervisors of one of the following types;
+
+-XenServer (standalone host or a single XenServer Pool)
+-VMWare ESX (via VMWare vCenter)
+-Microsoft Hyper-V (via System Center Virtual Machine Manager (SCVMM))
+
+Once created all connections appear in an identical manner regardless of the hypervisor technology that is under pinning the connection.  The connections can be used to browse the hypervisor structure to locate VMs, Storage and Network within whatever structure the specific hypervisor provides.</value>
+  </data>
+  <data name="HostServiceInfo" xml:space="preserve">
+    <value>Hosting Units provide an abstractioon layer for the XenDesktop site to communicate with the hypervisor and machine resources. Hosting unit interactions use a Hypervisor Communication Library interface to send commands to the ‘hypervisor connection’. Each hosting unit is a self-contained set of back-end resources that provide and manage a set of machines to be used for virtual desktops. The broker does not deal directly with hosting units, but rather only concerns itself with hypervisor connections, (one hypervisor connection can potentially be used for several hosting units, but this is transparent to the broker). Each hypervisor connection can provide machines for one or many desktop groups.</value>
+  </data>
+  <data name="HypervisorConnectionManager" xml:space="preserve">
+    <value>An instance of this service family is created to manage the communication with each hypervisor configured via the Broker Service’s SDK. Service instances map one-to-one with configured SDK hypervisor connections, and ensure that all communication with a particular hypervisor is routed via the same DDC. When a hypervisor connection is deleted the corresponding site service instance is also deleted. The Broker SDK allows a preferred DDC to be specified for each site service instance in this family (i.e. per hypervisor connection).</value>
+  </data>
+  <data name="Licensing" xml:space="preserve">
+    <value>This service manages the long-term licenses acquired for desktop and application sessions brokered via the Broker Service, or for sessions autonomously brokered by the VDA.</value>
+  </data>
+  <data name="MachineCreationService" xml:space="preserve">
+    <value>The Machine Creation Service provides the functionality to manage Machine images and provisioned Machines.  It manages the VMs and Master Images and utilizes the other Machine Creation Services (AD Identity Service and Machine Identity Service) to create Provisioned Machines.</value>
+  </data>
+  <data name="MachineIdentityService" xml:space="preserve">
+    <value>The Machine Identity Service is responsible for the maintenance of storage attached to provisioned VMs.  This provides the following functions;
+
+-Create OS and Identity disks for VMs
+-Remove OS and Identity disks for VMs
+-Update of OS disk (reset VM functionality).</value>
+  </data>
+  <data name="PowerPolicy" xml:space="preserve">
+    <value>This service manages idle machine levels within desktop groups based on the configured pool sizes and buffer sizes specified for each group. Machines are started-up/shut-down as required to maintain the required levels.</value>
+  </data>
+  <data name="RegistrationHardening" xml:space="preserve">
+    <value>This service periodically polls the database to check for workers that are configured as desktops but which only have soft registrations (this corresponds to workers that have been configured within the site after having registered with it).</value>
+  </data>
+  <data name="ServiceGroups" xml:space="preserve">
+    <value>Each service is part of a Service Group of like services.  A Site is a collection of services that all share the same database, and any service in a farm can be used to perform the required operations. Each service group is for a specific service Type and is stored with a name which must be unique.  The service group is also assigned a unique identifier (Uid) that can be used to uniquely identify the group.</value>
+  </data>
+  <data name="ServicesInfo" xml:space="preserve">
+    <value>Each service is part of a Service Group of like services.  A Site is a collection of services that all share the same database, and any service in a farm can be used to perform the required operations. Each service group is for a specific service Type and is stored with a name which must be unique.  The service group is also assigned a unique identifier (Uid) that can be used to uniquely identify the group.</value>
+  </data>
+  <data name="SetBrokerHypervisorConnection" xml:space="preserve">
+    <value>asnp citrix.broker*
+$ddc = $var1 
+$service = $var2 
+Set-BrokerHypervisorConnection –Name "$service" -PreferredController $ddc
+</value>
+  </data>
+  <data name="SiteInfo" xml:space="preserve">
+    <value>A XenDesktop site is a collection of Service Groups, where there is one of each required type of service group, that together form a XenDesktop deployment.</value>
+  </data>
+  <data name="SiteServices" xml:space="preserve">
+    <value>Within XenDesktop service processes, there are various low-level threads of execution that must run on only a single DDC at one time, but where the service thread must automatically resume on another DDC in the event of the shutdown or failure of the original. These singleton service threads are termed ‘site services’. It’s important to note that a site service is not itself a Windows service process, it’s a logical service within a service process.</value>
+  </data>
+  <data name="WorkerNameCacheRefresh" xml:space="preserve">
+    <value>This service periodically polls the database to check for cached worker SAM/DNS names that have not been refreshed for more than a configured period of time. Where such names are found the local Worker Name Cache service  is used to refresh them.</value>
+  </data>
+  <data name="GetBrokerDesktopGroup" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokerdesktopgroup -name $var
+</value>
+  </data>
+  <data name="GetBrokerDesktopGroupNames" xml:space="preserve">
+    <value>asnp citrix.broker*
+$groups = get-brokerdesktopgroup
+foreach ($group in $groups) 
+{$group.name}
+</value>
+  </data>
+  <data name="GetNetworks" xml:space="preserve">
+    <value>asnp citrix.host*
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($network in $item.NetworkPath)
+	{	
+	$network
+	}
+}
+</value>
+  </data>
+  <data name="GetStorages" xml:space="preserve">
+    <value>asnp citrix.host*
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($storage in $item.Storage)
+	{	
+	$storage.StoragePath
+	}
+}
+</value>
+  </data>
+  <data name="CheckServiceGroupNames" xml:space="preserve">
+    <value>asnp citrix.Broker*
+asnp citrix.Configuration*
+$instances = Get-ConfigRegisteredServiceInstance
+$site = Get-BrokerSite
+foreach ($instance in $instances)
+{
+	if($instance.ServiceGroupName -ne $site.Name)
+	{	
+		Write-Output "$($instance.ServiceGroupName),$($instance.ServiceInstanceUid),$($instance.Address)"
+	}
+}
+</value>
+  </data>
+  <data name="FixServiceGroupName" xml:space="preserve">
+    <value>asnp citrix.Broker*
+asnp citrix.Configuration*
+
+$instance = Get-ConfigRegisteredServiceInstance -ServiceInstanceUid $var
+$instance | Unregister-ConfigRegisteredServiceInstance
+$instance.ServiceGroupName = $site.Name
+$instance | Register-ConfigRegisteredServiceInstance
+</value>
+  </data>
+  <data name="GetBrokerDBVersion" xml:space="preserve">
+    <value>asnp citrix.broker*
+$version = Get-BrokerInstalledDbVersion
+write-output "$($version.Major).$($version.Minor).$($version.Build).$($version.Revision)"
+</value>
+  </data>
+  <data name="GetProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+get-provtask -taskid $var
+</value>
+  </data>
+  <data name="GetProvTasks" xml:space="preserve">
+    <value>asnp citrix.machine*
+foreach ($task in Get-ProvTask)
+{ write-output "$($task.TaskID)#$($task.WorkflowStatus)" }
+</value>
+  </data>
+  <data name="RemoveProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+remove-provtask -taskid $var
+</value>
+  </data>
+  <data name="RemoveStorage" xml:space="preserve">
+    <value>asnp citrix.host*
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	if ($item.PSChildName -eq $var1)
+	{
+		foreach ($storage in $item.Storage)
+		{
+			if ($storage -match $var2)
+			{
+				Remove-HypHostingUnitStorage -LiteralPath $item.PSPath -StoragePath $storage
+			}}}}
+</value>
+  </data>
+  <data name="StopProvTask" xml:space="preserve">
+    <value>asnp citrix.machine*
+stop-provtask -taskid $var
+</value>
+  </data>
+  <data name="GetAcctIdentityPool" xml:space="preserve">
+    <value>asnp citrix.adidentity*
+$pools = get-acctidentitypool
+foreach ($pool in $pools)
+{
+  $pool.IdentityPoolName
+}
+</value>
+  </data>
+  <data name="GetAcctIdentityPoolDetails" xml:space="preserve">
+    <value>asnp citrix.adidentity*
+get-acctidentitypool -IdentityPoolName $var
+</value>
+  </data>
+  <data name="GetBrokerCatalog" xml:space="preserve">
+    <value>asnp citrix.broker*
+get-brokercatalog -name $var
+</value>
+  </data>
+  <data name="GetBrokerCatalogs" xml:space="preserve">
+    <value>asnp citrix.broker*
+$catalogs = get-brokercatalog
+foreach ($catalog in $catalogs)
+{
+  $catalog.Name
+}
+</value>
+  </data>
+  <data name="GetPvdStorages" xml:space="preserve">
+    <value>asnp citrix.host*
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	foreach ($storage in $item.PersonalvDiskStorage)
+	{	
+	$storage.StoragePath
+	}
+}
+</value>
+  </data>
+  <data name="RemovePvdStorage" xml:space="preserve">
+    <value>asnp citrix.host*
+$items = get-childitem -path 'xdhyp:\hostingunits'
+foreach ($item in $items)
+{	
+	if ($item.PSChildName -eq $var1)
+	{
+		foreach ($storage in $item.PersonalvdiskStorage)
+		{
+			if ($storage -match $var2)
+			{
+				Remove-HypHostingUnitStorage -LiteralPath $item.PSPath -StoragePath $storage -StorageType PersonalvDiskStorage
+			}}}}
+</value>
+  </data>
+</root>
